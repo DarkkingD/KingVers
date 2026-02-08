@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f8f4ef;
+  --ink: #1f1b16;
+  --accent: #e56b6f;
+  --accent-2: #2f9c95;
+  --dusk: #344966;
+}
+
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at top, #fff 0%, #f8f4ef 55%, #efe7dc 100%);
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Text', serif;
+}
+
+a {
+  color: inherit;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(52, 73, 102, 0.1);
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid rgba(52, 73, 102, 0.08);
+  box-shadow: 0 8px 30px rgba(52, 73, 102, 0.08);
+}
